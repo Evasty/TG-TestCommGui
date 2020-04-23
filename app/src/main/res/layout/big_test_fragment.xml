@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:androidx="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    androidx:layout_width="wrap_content"
+    androidx:layout_height="match_parent"
+    androidx:layout_gravity="center"
+    tools:context=".ui.big.BigTestFrag">
+
+    <TextView
+        androidx:id="@+id/big_text"
+        androidx:layout_width="match_parent"
+        androidx:layout_height="wrap_content"
+        androidx:drawableTop="@mipmap/ic_launcher_round"
+        androidx:text="@string/placeholder_string"
+        androidx:textAlignment="center"
+        androidx:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        androidx:id="@+id/recyclerView"
+        androidx:layout_width="250dp"
+        androidx:layout_height="0dp"
+        androidx:clipChildren="false"
+        androidx:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/big_text" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        androidx:id="@+id/rem_button"
+        androidx:layout_width="wrap_content"
+        androidx:layout_height="wrap_content"
+        androidx:layout_gravity="center"
+        androidx:layout_marginBottom="32dp"
+        androidx:baselineAlignBottom="true"
+        androidx:clickable="true"
+        androidx:paddingVertical="30dp"
+        androidx:src="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        androidx:id="@+id/add_button"
+        androidx:layout_width="wrap_content"
+        androidx:layout_height="wrap_content"
+        androidx:layout_gravity="center"
+        androidx:layout_marginBottom="32dp"
+        androidx:baselineAlignBottom="true"
+        androidx:clickable="true"
+        androidx:paddingVertical="30dp"
+        androidx:src="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
